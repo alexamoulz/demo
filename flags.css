@@ -3,6 +3,8 @@
 	width: 600px;
 	height: 400px;
 	border: 1px solid black;
+	position: relative;
+	overflow: hidden;
 }
 
 /* Flag of Belgium */
@@ -10,6 +12,7 @@
 	width: 200px;
 	height: 400px;
 	background: black;
+	position: relative;
 }
 
 .yellow {
@@ -19,7 +22,6 @@
 	position: relative;
 	left: 200px;
 	bottom:400px;
-
 }
 
 .red {
@@ -27,9 +29,8 @@
 	height: 400px;
 	background: red;
 	position: relative;
-	left:400px;
+	left: 400px;
 	bottom: 800px;
-
 }
 
 /* Flag of Japan */
@@ -37,11 +38,29 @@
 	width: 200px;
 	height: 200px;
 	background: red;
-	border-radius: 100px;
-	position: absolute;
-	left: 239px;
-	bottom: -60px;
+	border-radius: 100%;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
 }
 
 
 /* Flag of Trinidad and Tobago */
+.redsquare {
+	width: 600px;
+	height: 400px;
+	background: red;
+	position: relative;
+}
+.stripe {
+	width: 100px;
+	height: 1100px;
+	background: black;
+	border-right: 15px solid white;
+	border-left: 15px solid white;
+	transform-origin: right;
+	left: 50%;
+	top: 50%;
+	transform: translate(143%,-75%)rotate(-46deg);
+}
